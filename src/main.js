@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from '@/router'
-
+console.log(router);
 
 // 导入饿了吗相关内容
 import ElementUI from 'element-ui'

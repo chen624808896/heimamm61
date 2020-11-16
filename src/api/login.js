@@ -1,7 +1,8 @@
 import axios from "axios"
-
+// 创建instance
 const instance = axios.create({
     baseURL:process.env.VUE_APP_BASEURL,
+    //  跨域携带cookie
     withCredentials:true
 })
 // 接口的调用 通过instance调用即可
