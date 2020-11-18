@@ -1,5 +1,5 @@
 // 提取key值
-const TOKENKEY = 'mmtoken'
+const TOKENKEY = 'mmtoken';
 // 保存
 export function setToken(token) {
      window.localStorage.setItem(TOKENKEY,token)

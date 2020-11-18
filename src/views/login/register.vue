@@ -1,6 +1,6 @@
 <template>
   <el-dialog
-    class="register-dialog"
+    class="register-dialog" 
     title="用户注册"
     center
     :visible.sync="dialogFormVisible"
@@ -164,13 +164,18 @@ export default {
 </script>
 
 <style lang="less">
-.register-dialog {
-  .el-dialog__header {
+.el-dialog__header {
     background: linear-gradient(to right, #01c4fa, #1395fa);
+    .el-dialog__title {
+    color: white;  
   }
-  .el-dialog__title {
-    color: #ffffff;
+     .el-dialog__close.el-icon {
+      color: white;
+    } 
   }
+
+.register-dialog {
+
   .code {
     width: 100%;
     height: 40px;
@@ -203,5 +208,7 @@ export default {
     height: 178px;
     display: block;
   }
+  
 }
+  
 </style>

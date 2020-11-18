@@ -1,10 +1,7 @@
-import axios from "axios"
-// 创建instance
-const instance = axios.create({
-    baseURL:process.env.VUE_APP_BASEURL,
-    //  跨域携带cookie
-    withCredentials:true
-})
+// 导入请求对象
+import instance from '@/utils/request.js'
+
+
 // 接口的调用 通过instance调用即可
 export function userLogin(data){
 return instance({

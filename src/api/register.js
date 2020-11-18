@@ -1,10 +1,6 @@
-import axios from "axios"
-// 创建instance
-const instance = axios.create({
-    baseURL:process.env.VUE_APP_BASEURL,
-    //  跨域携带cookie
-    withCredentials:true
-})
+// 导入请求对象
+import instance from '@/utils/request.js'
+
 // 抽取获取短信验证码的接口
 export function getPhoneCode(data){
   return  instance({

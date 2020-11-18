@@ -9,6 +9,8 @@ import "element-ui/lib/theme-chalk/index.css"
 // 注册
 Vue.use(ElementUI)
 
+// 导入全局过滤器
+import './filters'
 // 导入自己的样式
 import "@/assets/base.css"
 Vue.config.productionTip = false
