@@ -23,7 +23,7 @@ export function editSubject(data){
        url:"/subject/edit",
        method:"post",
        data
-     })
+ })
  }
 // 查询学科
 export function getSubject(params){
